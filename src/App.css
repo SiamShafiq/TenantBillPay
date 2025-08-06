@@ -1,38 +1,221 @@
-.App {
-  text-align: center;
+/* General App Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2, h3 {
+  margin: 0.5em 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  padding: 8px 16px;
+  margin: 4px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button:hover {
+  background-color: #555;
+}
+
+.app-center {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-list {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
 }
+
+.back-btn {
+  background-color: #bbb;
+}
+
+.app-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.form-section {
+  min-width: 280px;
+  max-width: 400px;
+  flex: 1;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.input-group input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Bill Preview Styles */
+.bill-preview {
+  background: #fff;
+  border: 2px solid #000;
+  padding: 30px;
+  max-width: 600px;
+  /* width: 600px; */
+  height: 500px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #000;
+  
+}
+
+.bill-box {
+  width: 100%;
+}
+
+.bill-box h3 {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.bill-box p {
+  /* text-align: center; */
+  margin: 4px 0;
+}
+
+/* Bill Table Formatting */
+.bill-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.bill-table td {
+  padding: 4px 0;
+  vertical-align: top;
+}
+
+.bill-table td.amount {
+  text-align: right;
+  font-weight: 500;
+}
+
+.total-row td {
+  font-weight: bold;
+  border-top: 1px solid #000;
+  padding-top: 8px;
+}
+
+.bill-box .mt {
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.bill-box strong {
+  display: block;
+  text-align: right;
+  margin-top: 40px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.bill-box p:last-of-type {
+  /* text-align: right; */
+  margin-top: 4px;
+}
+
+.month-heading{
+  text-align: center;
+  font-weight: bold;
+}
+
+.floor-number{
+  text-decoration: underline;
+}
+
+input,
+select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.preview-container {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.footer-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 10px;
+}
+
+.bill-date-left {
+  text-align: left;
+}
+
+.landlord-info {
+  text-align: right;
+}
+
+.footer-box{
+  display: flex;
+}
+
+.selected-bill button {
+  background-color: #000;
+  border: 2px solid #00acc1;
+  border: 2px solid blue;
+  font-weight: bold;
+}
+
